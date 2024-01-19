@@ -22,6 +22,12 @@ const NavBar = () => {
         </div>
         <div className=" w-full flex flex-row justify-end gap-3">
           <Link
+            href="/"
+            className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
+          >
+            home
+          </Link>
+          <Link
             href="/about"
             className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
           >

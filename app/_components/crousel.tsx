@@ -20,7 +20,7 @@ export function CarouselPlugin() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className=" max-w-[800px] py-5"
+      className=" max-w-[800px] py-5 h-full"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
