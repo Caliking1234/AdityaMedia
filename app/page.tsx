@@ -82,8 +82,8 @@ export default function Home() {
               Individuals and High Networth Individuals We are a catalyst
               between brands and their need to meet such customers. Our
               Selection process of brands that we introduce to our customer is
-              very detailed ensuring the privacy of our customers isn't Invaded
-              yet brand get complete sales experience.
+              very detailed ensuring the privacy of our customers isn&apos;t
+              Invaded yet brand get complete sales experience.
             </p>
           </div>
           <div className="p-5 space-y-3 w-full">
