@@ -28,28 +28,22 @@ const NavBar = () => {
             home
           </Link>
           <Link
-            href="/about"
-            className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
-          >
-            about us
-          </Link>
-          <Link
-            href="/service"
+            href="/service&work"
             className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
           >
             services
-          </Link>
-          <Link
-            href="/work"
-            className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
-          >
-            our work
           </Link>
           <Link
             href="/clients"
             className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
           >
             our clients
+          </Link>
+          <Link
+            href="/about"
+            className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
+          >
+            about us
           </Link>
         </div>
       </nav>
@@ -89,28 +83,22 @@ const NavBar = () => {
               home
             </Link>
             <Link
-              href="/about"
-              className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
-            >
-              about us
-            </Link>
-            <Link
-              href="/service"
+              href="/service&work"
               className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
             >
               services
-            </Link>
-            <Link
-              href="/work"
-              className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
-            >
-              our work
             </Link>
             <Link
               href="/clients"
               className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
             >
               our clients
+            </Link>
+            <Link
+              href="/about"
+              className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
+            >
+              about us
             </Link>
           </div>
         </div>

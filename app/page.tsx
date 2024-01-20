@@ -1,4 +1,4 @@
-import { CarouselPlugin } from "./_components/crousel";
+import Crousel from "./_components/crousel";
 
 export default function Home() {
   return (
@@ -23,38 +23,43 @@ export default function Home() {
           Property
         </h1>
       </div>
+      <Crousel />
       <div className=" w-full flex flex-col md:flex-row justify-center items-center">
-        <CarouselPlugin />
-        <div className=" flex flex-col w-full h-full">
-          <div className="p-5 w-full">
-            <h1 className=" text-xl text-[#EE6223] font-semibold p-1">
-              ...introduction
+        <div className=" grid grid-cols-1 md:grid-cols-2 w-full h-full gap-5">
+          <div className="p-5 space-y-3 w-full">
+            <h1 className=" text-xl sm:text-3xl text-[#EE6223] font-semibold p-1 uppercase">
+              introduction
             </h1>
-            <p className=" text-justify sm:text-balance">
-              <b className="text-[#EE6223]">Passionate</b>, Creative &
-              Responsible Boutique Event{" "}
-              <b className="text-[#EE6223]">Company</b> Imbibes Boutique Event{" "}
-              <b className="text-[#EE6223]">unique</b> work process Imbibes
-              Boutique Event <b className="text-[#EE6223]">Accountability</b> is
-              our key asset Prefer long term{" "}
-              <b className="text-[#EE6223]">Relationships</b>{" "}
-              <b className="text-[#EE6223]">Value</b> for Money Attitude return
-              on <b className="text-[#EE6223]">Investment</b>
-              <br /> <b className="text-[#EE6223]">Creating</b> Global Access
+            <p className=" shadow-md shadow-black p-3 h-full uppercase">
+              <b className="text-[#EE6223]">Imbibes Boutique Event</b> is a{" "}
+              <b className="text-[#EE6223]">dynamic</b> and{" "}
+              <b className="text-[#EE6223]">responsible</b> boutique event
+              company driven by passion and creativity. Our unique work process
+              reflects our commitment to{" "}
+              <b className="text-[#EE6223]">accountability</b>, making it our
+              key asset. We prioritize long-term{" "}
+              <b className="text-[#EE6223]">relationships</b>, delivering value
+              for money and ensuring a significant return on investment. With a
+              focus on creating <b className="text-[#EE6223]">global access</b>,
+              we strive to exceed expectations in every event we undertake.
             </p>
           </div>
-          <div className="p-5 w-full">
-            <h1 className=" text-xl text-[#EE6223] font-semibold p-1">
-              ...services provided
+          <div className="p-5 space-y-3 w-full">
+            <h1 className=" text-xl sm:text-3xl text-[#EE6223] font-semibold p-1 uppercase">
+              services provided
             </h1>
-            <p className=" text-justify sm:text-balance">
-              <b className="text-[#EE6223]">Event</b> & Activations Strategic,{" "}
-              <b className="text-[#EE6223]">Brand</b> Planning and{" "}
-              <b className="text-[#EE6223]">Consulting</b> Public{" "}
-              <b className="text-[#EE6223]">Relationship</b>, Social and{" "}
-              <b className="text-[#EE6223]">Digital</b> Media{" "}
-              <b className="text-[#EE6223]">Advertiser</b> Fuunded Television{" "}
-              <b className="text-[#EE6223]">Programs</b>
+            <p className=" shadow-md shadow-black p-3 h-full uppercase">
+              <b className="text-[#EE6223]">Strategically</b> navigating the
+              realms of event planning,{" "}
+              <b className="text-[#EE6223]">activations</b>,{" "}
+              <b className="text-[#EE6223]">brand strategy</b>, and{" "}
+              <b className="text-[#EE6223]">consulting</b>, we specialize in
+              public relations and serve as adept{" "}
+              <b className="text-[#EE6223]">social</b> and{" "}
+              <b className="text-[#EE6223]">digital media</b> advertisers. Our
+              unique expertise extends to television program funding, ensuring{" "}
+              <b className="text-[#EE6223]">impactful</b> and engaging content
+              creation.
             </p>
           </div>
         </div>
