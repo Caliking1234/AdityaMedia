@@ -1,4 +1,10 @@
+import { Esteban } from "next/font/google";
 import Crousel from "./_components/crousel";
+import { cn } from "@/lib/utils";
+const inter = Esteban({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function Home() {
   return (
@@ -24,7 +30,7 @@ export default function Home() {
         </h1>
       </div>
       <Crousel />
-      <div className=" w-full flex flex-col md:flex-row justify-center items-center">
+      <div className=" w-full flex flex-col md:flex-row justify-center items-center py-5">
         <div className=" grid grid-cols-1 md:grid-cols-2 w-full h-full gap-5">
           <div className="p-5 space-y-3 w-full">
             <h1 className=" text-xl sm:text-3xl text-[#EE6223] font-semibold p-1 uppercase">
@@ -62,6 +68,85 @@ export default function Home() {
               creation.
             </p>
           </div>
+          <div className="p-5 space-y-3 w-full">
+            <h1 className=" text-xl sm:text-3xl text-[#EE6223] font-semibold p-1 uppercase">
+              the bhp collective
+            </h1>
+            <p className=" shadow-md shadow-black p-3 h-full uppercase">
+              <b className="text-[#EE6223]">India&apos;s Premier Classic</b> Car
+              and SuperCarClub Membership by Invite only, with some of
+              India&apos;s Most well known car owners collectors race Drivers
+              and petroheads.{" "}
+              <b className="text-[#EE6223]">The BHP Collective</b> is also a
+              network of <b className="text-[#EE6223]">Uber High Networth</b>{" "}
+              Individuals and High Networth Individuals We are a catalyst
+              between brands and their need to meet such customers. Our
+              Selection process of brands that we introduce to our customer is
+              very detailed ensuring the privacy of our customers isn't Invaded
+              yet brand get complete sales experience.
+            </p>
+          </div>
+          <div className="p-5 space-y-3 w-full">
+            <h1 className=" text-xl sm:text-3xl text-[#EE6223] font-semibold p-1 uppercase">
+              because we love cars
+            </h1>
+            <p className=" shadow-md shadow-black p-3 h-full uppercase">
+              <b className="text-[#EE6223]">ING Renault</b> F1{" "}
+              <b className="text-[#EE6223]">Roadshow Founder</b>
+              of <b className="text-[#EE6223]">The Supercar Club</b> of India
+              Founder of the Claridges SuperCar Show Founder and Owner of The
+              BHP Collective The Skoda Yeti Performance Drive All India The AMG
+              Mixer The Renault Koleos Stunt Show The Renault Koleos Khardungla
+              Drive The Toyota Liva Drive Experience The Agility Control Package
+              Demo for Mercedes The{" "}
+              <b className="text-[#EE6223]">Lamborghini Track </b>Experience The
+              Rolls Royce Ghost–II Customer Drives. Design and Construction of
+              “The Wonderspeed Way” Mercedes AMG Customer Experiences Track and
+              Training Events for Enthusiasts
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className={cn(
+          "flex flex-col gap-y-5 text-center py-10",
+          inter.className
+        )}
+      >
+        <div className=" flex flex-col">
+          <p>
+            <span className=" text-3xl">&quot;</span>The Consigliere is a new
+            age communication services f irm.
+          </p>
+          <p>
+            {" "}
+            We partner with best in class communication experts to provide our
+            clients with communication solutions
+          </p>
+        </div>
+        <div className=" flex flex-col">
+          <p>
+            {" "}
+            Our understanding of clients objectives in a price sensitive market
+            is addressed by this method.
+          </p>
+          <p> Our Services Network Includes</p>
+        </div>
+        <div className=" flex flex-col">
+          <p> Last Mile Acquisition , Events</p>
+          <p>
+            {" "}
+            Branding , Design and Creative
+            <span className=" text-3xl">&quot;</span>
+          </p>
+        </div>
+        <div className=" flex flex-col">
+          <p> Digital Marketing and Social Media </p>
+          <p>
+            {" "}
+            Perception Managment and Press Relations
+            <span className=" text-3xl">&quot;</span>
+          </p>
         </div>
       </div>
     </main>

@@ -24,7 +24,7 @@ export default function RootLayout({
       <body
         className={cn(
           NewFont.className,
-          "flex flex-col items-center justify-center bg-gray-200"
+          "flex flex-col items-center justify-center bg-white"
         )}
       >
         <NavBar />
