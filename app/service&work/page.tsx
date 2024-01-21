@@ -14,58 +14,52 @@ const Page = () => {
     <div className=" w-full h-full text-3xl flex justify-center items-center">
       <Carousel className="w-full max-w-xs">
         <CarouselContent>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+          <CarouselItem className="basis-1/3">
             <Image
               alt="src"
               src={"/images/intro.jpg"}
               width={200}
               height={200}
-              className=" w-[50px] h-[50px] rounded-full shadow-sm shadow-black"
             />
           </CarouselItem>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+          <CarouselItem className="basis-1/3">
             <Image
               alt="src"
               src={"/images/intro.jpg"}
               width={200}
               height={200}
-              className=" w-[50px] h-[50px] rounded-full shadow-sm shadow-black"
             />
           </CarouselItem>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+          <CarouselItem className="basis-1/3">
             <Image
               alt="src"
               src={"/images/intro.jpg"}
               width={200}
               height={200}
-              className=" w-[50px] h-[50px] rounded-full shadow-sm shadow-black"
             />
           </CarouselItem>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+          <CarouselItem className="basis-1/3">
             <Image
               alt="src"
               src={"/images/intro.jpg"}
               width={200}
               height={200}
-              className=" w-[50px] h-[50px] rounded-full shadow-sm shadow-black"
             />
           </CarouselItem>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+          <CarouselItem className="basis-1/3">
             <Image
               alt="src"
               src={"/images/intro.jpg"}
               width={200}
               height={200}
-              className=" w-[50px] h-[50px] rounded-full shadow-sm shadow-black"
             />
           </CarouselItem>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+          <CarouselItem className="basis-1/3">
             <Image
               alt="src"
               src={"/images/intro.jpg"}
               width={200}
               height={200}
-              className=" w-[50px] h-[50px] rounded-full shadow-sm shadow-black"
             />
           </CarouselItem>
         </CarouselContent>
