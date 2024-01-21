@@ -9,6 +9,7 @@ import {
 import Image from "next/image";
 import React from "react";
 import Ourevents from "../_components/ourevents";
+import Newcomp from "../_components/newcomp";
 
 const Page = () => {
   return (
@@ -40,6 +41,7 @@ const Page = () => {
           <CarouselNext />
         </Carousel>
       </div>
+      <Newcomp />
     </div>
   );
 };
