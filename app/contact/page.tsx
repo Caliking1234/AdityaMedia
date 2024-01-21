@@ -77,9 +77,11 @@ const Page = () => {
                     />
                   </svg>
 
-                  <p className=" sm:px-1 text-xs">
+                  <p className=" sm:px-1 text-xs flex flex-col">
                     <span className=" text-xs sm:text-sm">our location :-</span>
-                    Mumbai,Banglore,Hyderabad,Kolkata,Pune,Chandigarh,Ahemdabad,Chennai,Goa
+                    <span>Mumbai,Banglore,Hyderabad</span>
+                    <span>,Kolkata,Pune,Chandigarh,</span>
+                    <span>Ahemdabad,Chennai,Goa</span>
                   </p>
                 </i>
               </a>
