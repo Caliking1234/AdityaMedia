@@ -134,11 +134,7 @@ export default function Home() {
         </div>
         <div className=" flex flex-col">
           <p> Last Mile Acquisition , Events</p>
-          <p>
-            {" "}
-            Branding , Design and Creative
-            <span className=" text-3xl">&quot;</span>
-          </p>
+          <p> Branding , Design and Creative</p>
         </div>
         <div className=" flex flex-col">
           <p> Digital Marketing and Social Media </p>
