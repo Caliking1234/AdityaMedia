@@ -87,12 +87,12 @@ const Newcomp = () => {
         {slideData.map((slide, index) => (
           <div
             key={index}
-            className="textdiv1 w-full"
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "flex-start",
-            }}
+            className="textdiv1 w-full flex flex-col-reverse sm:flex-row items-start"
+            // style={{
+            //   display: "flex",
+            //   flexDirection: "row",
+            //   alignItems: "flex-start",
+            // }}
           >
             <div
               className=" w-full"
@@ -103,7 +103,7 @@ const Newcomp = () => {
               </h1>
               <p>{slide.description}</p>
             </div>
-            <div className=" w-[200px] ">
+            <div className="w-[200px] mx-auto ">
               <Image
                 height={200}
                 width={200}
