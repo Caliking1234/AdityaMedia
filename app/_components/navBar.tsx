@@ -78,24 +78,36 @@ const NavBar = () => {
           <div className=" w-full flex flex-col justify-center items-center gap-3">
             <Link
               href="/"
+              onClick={() => {
+                setmenu(false);
+              }}
               className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
             >
               home
             </Link>
             <Link
               href="/service&work"
+              onClick={() => {
+                setmenu(false);
+              }}
               className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
             >
               services
             </Link>
             <Link
               href="/clients"
+              onClick={() => {
+                setmenu(false);
+              }}
               className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
             >
               our clients
             </Link>
             <Link
               href="/about"
+              onClick={() => {
+                setmenu(false);
+              }}
               className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
             >
               about us
