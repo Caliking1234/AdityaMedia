@@ -54,7 +54,7 @@ const Page = () => {
             Contact Us
           </h1>
           <div className="">
-            <div className="flex flex-row sm:flex-col sm:gap-4 text-gray-400 my-5">
+            <div className="flex flex-col sm:gap-4 text-gray-400 my-5">
               <a className=" hover:text-gray-700" href="#">
                 <i className="flex">
                   <svg
