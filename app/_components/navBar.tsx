@@ -40,10 +40,10 @@ const NavBar = () => {
             our clients
           </Link>
           <Link
-            href="/about"
+            href="/contact"
             className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
           >
-            about us
+            contact us
           </Link>
         </div>
       </nav>
@@ -104,13 +104,13 @@ const NavBar = () => {
               our clients
             </Link>
             <Link
-              href="/about"
+              href="/contact"
               onClick={() => {
                 setmenu(false);
               }}
               className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
             >
-              about us
+              contact us
             </Link>
           </div>
         </div>
