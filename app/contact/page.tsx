@@ -6,7 +6,7 @@ import ContacUsGif from "../../public/images/contactus.gif";
 import emailjs from "emailjs-com";
 import { Toaster, toast } from "sonner";
 
-const page = () => {
+const Page = () => {
   const [Name, setName] = useState("");
   const [Emails, setEmails] = useState("");
   const [Phoneno, setPhoneno] = useState("");
@@ -217,4 +217,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
