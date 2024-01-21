@@ -53,7 +53,7 @@ const Page = () => {
           <h1 className=" mt-1 text-3xl sm:text-5xl font-bold tracking-wide text-gray-400">
             Contact Us
           </h1>
-          <div className=" hidden sm:block">
+          <div className="">
             <div className="flex flex-row sm:flex-col sm:gap-4 text-gray-400 my-5">
               <a className=" hover:text-gray-700" href="#">
                 <i className="flex">
@@ -134,7 +134,7 @@ const Page = () => {
             height={500}
             width={500}
             src={ContacUsGif}
-            className="hidden sm:block max-w-[200px]"
+            className=" max-w-[200px]"
           />
         </div>
         <div className=" w-full h-fit py-5 sm:py-10 sm:mx-5 sm:w-1/2 sm:min-h-[100%] flex flex-col items-center justify-center bg-gray-200 rounded-md">
