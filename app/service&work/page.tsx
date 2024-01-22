@@ -10,13 +10,15 @@ import Image from "next/image";
 import React from "react";
 import Ourevents from "../_components/ourevents";
 import Newcomp from "../_components/newcomp";
+import Crousel from "../_components/multipleslides";
 
 const Page = () => {
   return (
     <div className=" w-full h-full flex flex-col justify-center items-center">
       <Ourevents />
       <div className=" w-full py-5 px-3">
-        <Carousel
+        <Crousel />
+        {/* <Carousel
           className=" w-full shadow-sm shadow-black"
           opts={{ loop: true }}
         >
@@ -39,7 +41,7 @@ const Page = () => {
           </CarouselContent>
           <CarouselPrevious />
           <CarouselNext />
-        </Carousel>
+        </Carousel> */}
       </div>
       <Newcomp />
     </div>
