@@ -87,7 +87,7 @@ const Newcomp = () => {
         {slideData.map((slide, index) => (
           <div
             key={index}
-            className="textdiv1 w-full flex flex-col-reverse sm:flex-row items-start"
+            className="textdiv1 w-full flex flex-col-reverse sm:flex-row items-start border-black border-[1px] shadow-sm shadow-black"
             // style={{
             //   display: "flex",
             //   flexDirection: "row",
