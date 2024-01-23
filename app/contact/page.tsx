@@ -47,7 +47,7 @@ const Page = () => {
     //   Query;
   };
   return (
-    <div className="w-full max-h-screen mx-auto flex flex-col gap-5 justify-center items-center py-10 px-5 bg-white ">
+    <div className="w-full mx-auto flex flex-col gap-5 justify-center items-center py-10 px-5 bg-white ">
       <div className=" w-[100%] py-5 bg-gray-200 sm:bg-white rounded-md flex flex-col sm:flex-row shadow-md shadow-black">
         <div className=" w-full sm:w-1/2 flex flex-col justify-around items-center sm:min-h-[100%]">
           <h1 className=" mt-1 text-3xl sm:text-5xl font-bold tracking-wide text-gray-400">
