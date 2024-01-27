@@ -1,3 +1,4 @@
+"use client";
 import { Esteban } from "next/font/google";
 import Crousel from "./_components/crousel";
 import { cn } from "@/lib/utils";
@@ -10,12 +11,43 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Skeleton } from "@/components/ui/skeleton";
+
+import { useEffect, useState } from "react";
 const inter = Esteban({
   subsets: ["latin"],
   weight: "400",
 });
 
 export default function Home() {
+  const [mounted, setmounted] = useState<boolean>(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setmounted(true);
+    }, 2500);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <main className=" w-full flex min-h-screen flex-col items-center p-5 space-y-5">
+        <div className=" w-full flex flex-row items-center sm:items-start flex-wrap">
+          <Skeleton className="h-10 w-full" />
+
+          <Skeleton className="h-10 w-full" />
+
+          <Skeleton className="h-10 w-full" />
+
+          <Skeleton className="h-10 w-full" />
+
+          <Skeleton className="h-10 w-full" />
+
+          <Skeleton className="h-10 w-full" />
+        </div>
+        <Skeleton className=" w-full h-[50vh]" />
+      </main>
+    );
+  }
   return (
     <main className=" w-full flex min-h-screen flex-col items-center p-5">
       <div className=" w-full flex flex-row items-center sm:items-start flex-wrap">

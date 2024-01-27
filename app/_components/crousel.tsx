@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
@@ -83,6 +83,15 @@ const Crousel = () => {
     .slick-prev:before {
     }
   `;
+  const [mounted, setmounted] = useState<boolean>(false);
+
+  useEffect(() => {
+    setmounted(true);
+  }, []);
+
+  if (!mounted) {
+    return;
+  }
   return (
     <div className=" w-full">
       <Carousel {...settings} className=" -z-0">
