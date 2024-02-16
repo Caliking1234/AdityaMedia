@@ -283,7 +283,7 @@ export default function Home() {
       >
         <div className=" flex flex-col">
           <p>
-            <span className=" text-3xl">&quot;</span>The Consigliere is a new
+            <span className=" text-3xl">&quot;</span>The Aaditya Media is a new
             age communication services f irm.
           </p>
           <p>
