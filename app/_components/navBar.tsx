@@ -45,6 +45,12 @@ const NavBar = () => {
           >
             contact us
           </Link>
+          <Link
+            href="/astrology"
+            className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
+          >
+            astrology
+          </Link>
         </div>
       </nav>
       <nav className=" w-full h-[100px] bg-[#EDD0B3] p-4 flex-row items-center justify-between flex md:hidden">
@@ -111,6 +117,15 @@ const NavBar = () => {
               className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
             >
               contact us
+            </Link>
+            <Link
+              href="/astrology"
+              onClick={() => {
+                setmenu(false);
+              }}
+              className="p-1 text-[#EE6223] hover:text-white hover:font-bold transition-all duration-100"
+            >
+              astrology
             </Link>
           </div>
         </div>
