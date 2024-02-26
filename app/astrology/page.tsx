@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-const page = () => {
+const Page = () => {
   const [load, setload] = useState(true);
   const [Name, setName] = useState("");
   const [Emails, setEmails] = useState("");
@@ -123,4 +123,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
