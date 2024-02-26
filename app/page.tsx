@@ -89,17 +89,11 @@ export default function Home() {
           </CardHeader>
           <CardContent>
             <p className="  p-3 h-full uppercase">
-              <b className="text-[#EE6223]">Imbibes Boutique Event</b> is a{" "}
-              <b className="text-[#EE6223]">dynamic</b> and{" "}
-              <b className="text-[#EE6223]">responsible</b> boutique event
-              company driven by passion and creativity. Our unique work process
-              reflects our commitment to{" "}
-              <b className="text-[#EE6223]">accountability</b>, making it our
-              key asset. We prioritize long-term{" "}
-              <b className="text-[#EE6223]">relationships</b>, delivering value
-              for money and ensuring a significant return on investment. With a
-              focus on creating <b className="text-[#EE6223]">global access</b>,
-              we strive to exceed expectations in every event we undertake.
+              <b className="text-[#EE6223]">Passionate</b>,{" "}
+              <b className="text-[#EE6223]">Creative</b> &{" "}
+              <b className="text-[#EE6223]">Responsible</b> Imbibes unique work
+              process Accountability is our key asset Prefer Long term
+              Relationships Value for Money Attitude Creating GlobalAccess
             </p>
           </CardContent>
         </Card>
