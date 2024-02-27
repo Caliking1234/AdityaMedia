@@ -55,6 +55,7 @@ const Page = () => {
               width={200}
               alt="asd"
             />
+            <Image src={"/images/om1.png"} height={60} width={60} alt="asd" />
             <div>
               <p className=" font-bold text-xl">पाराशर ज्योतिष</p>
             </div>
