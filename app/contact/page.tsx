@@ -16,35 +16,21 @@ const Page = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_k7knmhj",
-        "template_2udt7yq",
+        "service_qjf3pee",
+        "template_7tqet1k",
         e.target,
-        "8noouMKd7QSJ7BRRu"
+        "Jha4ZIaNTb2Anm8Sg"
       )
       .then((res) => {
-        // console.log(res);
         setName("");
         setEmails("");
         setPhoneno("");
         setQuery("");
         setcountry("");
-        // alert("Data Sent");
       })
       .catch((err) => {
         console.log(err);
       });
-
-    // window.location.href =
-    //   "mailto:info@dotclu.com?subject=" +
-    //   Query +
-    //   "&body= \n Name:" +
-    //   Name +
-    //   " \n Email:" +
-    //   Emails +
-    //   " \n Phone No.:" +
-    //   Phoneno +
-    //   " \n Query:" +
-    //   Query;
   };
   return (
     <div className="w-full mx-auto flex flex-col gap-5 justify-center items-center py-10 px-5 bg-white ">

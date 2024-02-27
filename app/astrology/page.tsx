@@ -1,6 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import emailjs from "emailjs-com";
+import { Toaster, toast } from "sonner";
 
 const Page = () => {
   const [load, setload] = useState(true);
@@ -15,6 +17,28 @@ const Page = () => {
       setload(false);
     }, 2000);
   }, []);
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_qjf3pee",
+        "template_anxtuil",
+        e.target,
+        "Jha4ZIaNTb2Anm8Sg"
+      )
+      .then((res) => {
+        // console.log(res);
+        setName("");
+        setEmails("");
+        setPhoneno("");
+        setdob("");
+        setquery("");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   return (
     <div className=" w-full h-full">
@@ -53,7 +77,7 @@ const Page = () => {
               <form
                 action=""
                 className=" w-[90%] h-fit flex flex-col items-center justify-center gap-2 sm:gap-4"
-                // onSubmit={sendEmail}
+                onSubmit={sendEmail}
               >
                 <input
                   type="text"
@@ -102,6 +126,7 @@ const Page = () => {
                 <textarea
                   placeholder="enter your query"
                   required
+                  name="query"
                   value={query}
                   onChange={(e) => {
                     setquery(e.target.value);
@@ -110,10 +135,16 @@ const Page = () => {
                 />
                 <button
                   type="submit"
+                  onClick={() => {
+                    toast.success(
+                      "We have received you Query and We will reach out soon"
+                    );
+                  }}
                   className=" w-1/2 mt-3  py-2 px-5 text-white bg-cyan-700 hover:bg-white hover:text-cyan-700  hover:border-black hover:border-solid hover:border-[1px] ease-in duration-150 delay-75"
                 >
                   Submit
                 </button>
+                <Toaster richColors position="top-center" />
               </form>
             </div>
           </div>
