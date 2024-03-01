@@ -10,6 +10,8 @@ const Page = () => {
   const [Emails, setEmails] = useState("");
   const [Phoneno, setPhoneno] = useState("");
   const [dob, setdob] = useState("");
+  const [placeofbirth, setplaceofbirth] = useState("");
+  const [timeofbirth, settimeofbirth] = useState("");
   const [query, setquery] = useState("");
 
   useEffect(() => {
@@ -34,6 +36,8 @@ const Page = () => {
         setPhoneno("");
         setdob("");
         setquery("");
+        setplaceofbirth("");
+        settimeofbirth("");
       })
       .catch((err) => {
         console.log(err);
@@ -99,6 +103,28 @@ const Page = () => {
                   value={dob}
                   onChange={(e) => {
                     setdob(e.target.value);
+                  }}
+                  className=" ring mb-[3px] ring-white text-black w-full text-xs  rounded-sm px-4 py-2 outline-none focus:ring-2 focus:ring-black"
+                />
+                <input
+                  type="text"
+                  placeholder="Time of Birth"
+                  required
+                  name="timeofbirth"
+                  value={timeofbirth}
+                  onChange={(e) => {
+                    settimeofbirth(e.target.value);
+                  }}
+                  className=" ring mb-[3px] ring-white text-black w-full text-xs  rounded-sm px-4 py-2 outline-none focus:ring-2 focus:ring-black"
+                />
+                <input
+                  type="text"
+                  placeholder="Place of Birth"
+                  required
+                  name="placeofbirth"
+                  value={placeofbirth}
+                  onChange={(e) => {
+                    setplaceofbirth(e.target.value);
                   }}
                   className=" ring mb-[3px] ring-white text-black w-full text-xs  rounded-sm px-4 py-2 outline-none focus:ring-2 focus:ring-black"
                 />
